@@ -1,0 +1,135 @@
+/* Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+#### Text
+
+- Very dark desaturated blue: hsl(238, 29%, 16%)
+- Soft red: hsl(14, 88%, 65%)
+
+#### Gradient
+
+Background gradient:
+
+- Soft violet: hsl(273, 75%, 66%)
+- Soft blue: hsl(240, 73%, 65%)
+
+### Neutral
+
+#### Text
+
+- Very dark grayish blue: hsl(237, 12%, 33%)
+- Dark grayish blue: hsl(240, 6%, 50%)
+
+#### Dividers
+
+- Light grayish blue: hsl(240, 5%, 91%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 12px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    /* primary text colors */
+    --very-dark-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+
+    /* background gradient */
+    --soft--violet: hsl(273, 75%, 66%);
+    --soft--blue: hsl(240, 73%, 65%);
+
+    /* neutral */
+    --very--dark-grayish-blue:hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+
+    --light-graysih-blue: hsl(240, 5%, 91%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    background: rgb(175,103,233);
+    background: linear-gradient(180deg, rgba(175,103,233,1) 10%, rgba(101,101,231,1) 75%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* illustrations */
+
+header{
+    padding-top: 140px;
+    text-align: center;
+    height: 30%;
+    color: var(--very-dark-blue);
+}
+
+/* header img{
+    position: relative;
+    bottom: 40px;
+    right: 15px;
+} */
+
+.card{
+    width: 325px;
+    max-width: 325px;
+    padding-bottom: 50px;
+    background-color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questions-block{
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: var(--very--dark-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+
+.answer{
+    display: none;
+}
+
+/* footer */
+
+footer{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+footer a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
