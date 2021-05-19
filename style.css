@@ -75,8 +75,20 @@ body{
 
 /* illustrations */
 
+.illustrations{
+    height: 220px;
+    width: 300px;
+    background: url(images/illustration-woman-online-mobile.svg)  no-repeat, url(images/bg-pattern-mobile.svg) 25px 107px no-repeat;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 99;
+}
+
+/* header */
+
 header{
-    padding-top: 140px;
+    padding-top: 120px;
     text-align: center;
     height: 30%;
     color: var(--very-dark-blue);
@@ -102,21 +114,35 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .questions-block{
     font-size: 14px;
-    letter-spacing: -0.5px;
+    letter-spacing: 0.05px;
     color: var(--very--dark-grayish-blue);
     display: flex;
     flex-direction: column;
     width: 280px;
 }
 
+p.question:hover{
+    color: var(--soft-red);
+    cursor: pointer;
+}
+
+.question img{
+    float: right;
+}
 
 .answer{
     display: none;
+    color: var(--dark-grayish-blue);
+    font-size: 12px;
+    letter-spacing: 0.05px;
 }
+
+
 
 /* footer */
 
